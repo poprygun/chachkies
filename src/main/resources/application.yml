@@ -1,6 +1,13 @@
 spring:
   application:
     name: chachkie
+
+graphql:
+  spqr:
+    gui:
+      enabled: true
+    relay:
+      connection-check-relaxed: true
 ---
 spring:
   profiles: default
