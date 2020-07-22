@@ -1,7 +1,0 @@
----
-applications:
-- name: chachkies
-  memory: 1G
-  path: target/chachkies.jar
-  services:
-    - ChachkiesDS
