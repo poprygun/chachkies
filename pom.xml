@@ -57,7 +57,16 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
+	<distributionManagement>
+		<snapshotRepository>
+			<id>nexus-snapshots</id>
+			<url>http://nexus-service:8081/repository/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>nexus-releases</id>
+			<url>http://nexus-service:8081/repository/releases</url>
+		</repository>
+	</distributionManagement>
 	<build>
 		<finalName>${artifactId}</finalName>
 		<plugins>
