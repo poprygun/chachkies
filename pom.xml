@@ -60,11 +60,11 @@
 	<distributionManagement>
 		<snapshotRepository>
 			<id>nexus-snapshots</id>
-			<url>http://nexus-service:8081/repository/snapshots</url>
+			<url>nexus-service:8100/repository/snapshots/</url>
 		</snapshotRepository>
 		<repository>
 			<id>nexus-releases</id>
-			<url>http://nexus-service:8081/repository/releases</url>
+			<url>nexus-service:8100/repository/releases/</url>
 		</repository>
 	</distributionManagement>
 	<build>
