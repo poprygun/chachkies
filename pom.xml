@@ -61,7 +61,6 @@
 		<snapshotRepository>
 			<id>artifactory-snapshots</id>
 			<url>http://10.1.0.253:8081/artifactory/libs-snapshot-local</url>
-			<uniqueVersion>false</uniqueVersion>
 		</snapshotRepository>
 		<repository>
 			<id>artifactory-releases</id>
