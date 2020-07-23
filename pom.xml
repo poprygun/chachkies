@@ -60,12 +60,12 @@
 	<distributionManagement>
 		<snapshotRepository>
 			<id>artifactory-snapshots</id>
-			<url>http://10.96.64.200:8081/artifactory/libs-snapshot-local</url>
+			<url>http://10.1.0.236:8080/artifactory/libs-snapshot-local</url>
 			<uniqueVersion>false</uniqueVersion>
 		</snapshotRepository>
 		<repository>
 			<id>artifactory-releases</id>
-			<url>http://10.96.64.200:8081/artifactory/libs-release-local</url>
+			<url>http://10.1.0.236:8080/artifactory/libs-release-local</url>
 		</repository>
 	</distributionManagement>
 	<build>
