@@ -59,13 +59,13 @@
 	</dependencies>
 	<distributionManagement>
 		<snapshotRepository>
-			<id>nexus-snapshots</id>
-			<url>http://10.1.0.221:8081/repository/snapshots/</url>
+			<id>artifactory-snapshots</id>
+			<url>http://10.96.64.200:8081/artifactory/libs-snapshot-local</url>
 			<uniqueVersion>false</uniqueVersion>
 		</snapshotRepository>
 		<repository>
-			<id>nexus-releases</id>
-			<url>http://10.1.0.221:8081/repository/releases/</url>
+			<id>artifactory-releases</id>
+			<url>http://10.96.64.200:8081/artifactory/libs-release-local</url>
 		</repository>
 	</distributionManagement>
 	<build>
