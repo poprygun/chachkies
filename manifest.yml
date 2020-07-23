@@ -3,5 +3,7 @@ applications:
 - name: chachkies
   memory: 1G
   path: target/chachkies.jar
+  buildpacks:
+    - java_buildpack
   services:
     - ChachkiesDS
