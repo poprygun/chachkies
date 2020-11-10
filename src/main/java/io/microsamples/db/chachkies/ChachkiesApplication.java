@@ -1,5 +1,7 @@
 package io.microsamples.db.chachkies;
 
+import com.coxautodev.graphql.tools.GraphQLQueryResolver;
+import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.jeasy.random.EasyRandom;
 import org.jeasy.random.EasyRandomParameters;
@@ -42,6 +44,16 @@ class ChachkiesLoader implements ApplicationListener<ApplicationStartedEvent> {
         log.info("Total --> {} rows", chachkieRepository.count());
         final List<Chachkie> chachkies = chachkieRepository.saveAll(easyRandom.objects(Chachkie.class, 13)::iterator);
         chachkies.stream().forEach(c -> log.info("Saved {}", c));
+    }
+}
+
+@Component
+@AllArgsConstructor
+class Query implements GraphQLQueryResolver {
+    private ChachkiesService chachkiesService;
+
+    public List<Chachkie> getAllChachkies() {
+        return chachkiesService.allChachkies();
     }
 }
 

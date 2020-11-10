@@ -2,8 +2,8 @@
 
 Tested against PWS ClearDb
 
-# [UI is using GraphQl](http://localhost:8080/gui)
+POC of [Integration with Tanzu Build Serivce](https://gist.github.com/poprygun/048a3dd437d206b49b78ded5688bbb81)
 
-Based on [this sample app](https://github.com/leangen/graphql-spqr-samples)
+## [UI is using GraphQl](http://localhost:8080/graphiql?query=%7B%0A%20%20getAllChachkies%7B%0A%20%20%20%20id%0A%20%20%20%20name%0A%20%20%20%20createdAt%0A%20%20%7D%0A%7D%0A)
 
-Connect Tanzu Build Service Trigger 2
+

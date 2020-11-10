@@ -1,0 +1,10 @@
+type Chachkie {
+    id: String!
+    name: String!
+    createdAt: String!
+}
+
+# The Root Query for the application
+type Query {
+    getAllChachkies: [Chachkie]!
+}
