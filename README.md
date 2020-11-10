@@ -6,4 +6,4 @@ Tested against PWS ClearDb
 
 Based on [this sample app](https://github.com/leangen/graphql-spqr-samples)
 
-Connect Tanzu Build Service Trigger
+Connect Tanzu Build Service Trigger 2
