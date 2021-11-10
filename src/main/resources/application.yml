@@ -1,6 +1,9 @@
+
 spring:
   application:
     name: chachkie
+server:
+  port: 8383
 ---
 spring:
   profiles: default

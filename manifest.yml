@@ -3,7 +3,7 @@ applications:
 - name: chachkies
   memory: 1G
   path: target/chachkies.jar
-  buildpacks:
-    - java_buildpack
   services:
     - ChachkiesDS
+  env:
+    JBP_CONFIG_OPEN_JDK_JRE: '{jre: { version: 11.+ }}'
